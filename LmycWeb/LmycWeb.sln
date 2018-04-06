@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LmycWeb", "LmycWeb.csproj", "{4581133A-787B-4DFA-917F-239A7FE3A62D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4581133A-787B-4DFA-917F-239A7FE3A62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4581133A-787B-4DFA-917F-239A7FE3A62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4581133A-787B-4DFA-917F-239A7FE3A62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4581133A-787B-4DFA-917F-239A7FE3A62D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
