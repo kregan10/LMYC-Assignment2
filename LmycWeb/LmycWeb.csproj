@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-LmycWeb-393F94E0-E110-4D71-AB43-386C80771E68</UserSecretsId>
+    <TypescriptCompileBlocked>true</TypescriptCompileBlocked>
   </PropertyGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" />

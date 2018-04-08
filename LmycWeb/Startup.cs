@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using LmycWeb.Data;
 using LmycWeb.Models;
 using LmycWeb.Services;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace LmycWeb
 {
@@ -42,6 +44,7 @@ namespace LmycWeb
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -51,6 +54,19 @@ namespace LmycWeb
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.Use(async (HttpContext context, Func<Task> next) =>
+            {
+                await next.Invoke();
+
+                if (context.Response.StatusCode == 404 && !context.Request.Path.Value.Contains("/api"))
+                {
+                    context.Request.Path = "/index.html";
+                    await next.Invoke();
+                }
+            });
+
+            app.UseDefaultFiles();
 
             app.UseStaticFiles();
 

@@ -13124,30 +13124,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mini_\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/bryan/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ASP_Projects\\LMYC-Assignment2\\LmycWeb\\LmycWeb.csproj",
+      "projectUniqueName": "/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/LmycWeb.csproj",
       "projectName": "LmycWeb",
-      "projectPath": "C:\\ASP_Projects\\LMYC-Assignment2\\LmycWeb\\LmycWeb.csproj",
-      "packagesPath": "C:\\Users\\mini_\\.nuget\\packages\\",
-      "outputPath": "C:\\ASP_Projects\\LMYC-Assignment2\\LmycWeb\\obj\\",
+      "projectPath": "/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/LmycWeb.csproj",
+      "packagesPath": "/Users/bryan/.nuget/packages/",
+      "outputPath": "/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mini_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/bryan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
