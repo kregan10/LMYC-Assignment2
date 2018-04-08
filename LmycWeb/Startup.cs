@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using LmycWeb.Data;
 using LmycWeb.Models;
 using LmycWeb.Services;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 using AspNet.Security.OpenIdConnect.Primitives;
 
 namespace LmycWeb
@@ -96,8 +98,23 @@ namespace LmycWeb
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+<<<<<<< HEAD
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext dbContext)
+=======
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext context)
+>>>>>>> 4d3ae4bf2ebda2db966958b869c40ff6103061d6
         {
+            app.Use(async (HttpContext httpContext, Func<Task> next) =>
+            {
+                await next.Invoke();
+
+                if (httpContext.Response.StatusCode == 404)
+                {
+                    httpContext.Request.Path = new PathString("/index.html");
+                    await next.Invoke();
+                }
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -107,6 +124,19 @@ namespace LmycWeb
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            //app.Use(async (HttpContext httpContext, Func<Task> next) =>
+            //{
+            //    await next.Invoke();
+
+            //    if (httpContext.Response.StatusCode == 404 && !httpContext.Request.Path.Value.Contains("/api"))
+            //    {
+            //        httpContext.Request.Path = "/index.html";
+            //        await next.Invoke();
+            //    }
+            //});
+
+            app.UseDefaultFiles();
 
             app.UseStaticFiles();
 
@@ -118,8 +148,13 @@ namespace LmycWeb
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+<<<<<<< HEAD
+            // DummyData.Initialize(dbContext);
+                                }
+=======
            // DummyData.Initialize(context);
-            
+
         }
+>>>>>>> 4d3ae4bf2ebda2db966958b869c40ff6103061d6
     }
 }
