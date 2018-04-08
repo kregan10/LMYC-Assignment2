@@ -4,6 +4,7 @@ C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\LmycWeb.runtime
 C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\LmycWeb.runtimeconfig.dev.json
 C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\LmycWeb.dll
 C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\LmycWeb.pdb
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\LmycWeb.csprojResolveAssemblyReference.cache
 C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\LmycWeb.csproj.CoreCompileInputs.cache
 C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\LmycWeb.AssemblyInfoInputs.cache
