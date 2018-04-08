@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "0d216af0a112e9c1bc9f418520bbc35e3afee248"
+    "signature": "9ac2762cefeb8c814917b94b73d5b07aca6c3340"
   },
   "compilationOptions": {
     "defines": [
@@ -46,7 +46,7 @@
       },
       "AspNet.Security.OAuth.Validation/2.0.0-rc2-final": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication": "2.0.1",
+          "Microsoft.AspNetCore.Authentication": "2.0.3",
           "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
@@ -59,7 +59,7 @@
       "AspNet.Security.OpenIdConnect.Extensions/2.0.0-rc2-final": {
         "dependencies": {
           "AspNet.Security.OpenIdConnect.Primitives": "2.0.0-rc2-final",
-          "Microsoft.AspNetCore.Authentication": "2.0.1"
+          "Microsoft.AspNetCore.Authentication": "2.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/AspNet.Security.OpenIdConnect.Extensions.dll": {}
@@ -83,8 +83,8 @@
       "AspNet.Security.OpenIdConnect.Server/2.0.0-rc2-final": {
         "dependencies": {
           "AspNet.Security.OpenIdConnect.Extensions": "2.0.0-rc2-final",
-          "Microsoft.AspNetCore.Authentication": "2.0.1",
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.1",
+          "Microsoft.AspNetCore.Authentication": "2.0.3",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.2",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "2.1.4"
         },
         "runtime": {
@@ -96,7 +96,7 @@
       },
       "CryptoHelper.StrongName/3.0.1.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.0.1"
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/CryptoHelper.StrongName.dll": {}
@@ -490,7 +490,7 @@
       },
       "Microsoft.AspNetCore.Authentication.OAuth/2.0.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication": "2.0.1",
+          "Microsoft.AspNetCore.Authentication": "2.0.3",
           "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
@@ -2170,7 +2170,7 @@
       "Microsoft.Extensions.Logging.EventSource/2.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.0.1",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.EventSource.dll": {}
@@ -2557,7 +2557,7 @@
         "dependencies": {
           "AspNet.Security.OpenIdConnect.Server": "2.0.0-rc2-final",
           "Microsoft.AspNetCore.Diagnostics.Abstractions": "2.0.1",
-          "Microsoft.Extensions.Caching.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Caching.Abstractions": "2.0.1",
           "Newtonsoft.Json.Bson": "1.0.1",
           "OpenIddict.Core": "2.0.0-rc2-final"
         },
@@ -2571,10 +2571,10 @@
       "OpenIddict.Core/2.0.0-rc2-final": {
         "dependencies": {
           "CryptoHelper.StrongName": "3.0.1.1",
-          "Microsoft.Extensions.Caching.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Caching.Abstractions": "2.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Options": "2.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.0.1",
+          "Microsoft.Extensions.Options": "2.0.1",
           "Newtonsoft.Json": "10.0.2",
           "OpenIddict.Models": "2.0.0-rc2-final",
           "System.Collections.Immutable": "1.4.0",
@@ -2589,7 +2589,7 @@
       },
       "OpenIddict.EntityFrameworkCore/2.0.0-rc2-final": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.1",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.2",
           "OpenIddict.Core": "2.0.0-rc2-final"
         },
         "runtime": {
