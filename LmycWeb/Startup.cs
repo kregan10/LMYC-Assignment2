@@ -98,11 +98,7 @@ namespace LmycWeb
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-<<<<<<< HEAD
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext dbContext)
-=======
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext context)
->>>>>>> 4d3ae4bf2ebda2db966958b869c40ff6103061d6
         {
             app.Use(async (HttpContext httpContext, Func<Task> next) =>
             {
@@ -148,13 +144,7 @@ namespace LmycWeb
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-<<<<<<< HEAD
             // DummyData.Initialize(dbContext);
-                                }
-=======
-           // DummyData.Initialize(context);
-
         }
->>>>>>> 4d3ae4bf2ebda2db966958b869c40ff6103061d6
     }
 }
