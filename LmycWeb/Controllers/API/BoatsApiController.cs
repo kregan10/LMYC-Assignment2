@@ -128,4 +128,8 @@ namespace LmycWeb.Controllers.API
             return _context.Boats.Any(e => e.BoatId == id);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4d3ae4bf2ebda2db966958b869c40ff6103061d6

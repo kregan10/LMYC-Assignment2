@@ -13363,28 +13363,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/bryan/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\mini_\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/LmycWeb.csproj",
+      "projectUniqueName": "C:\\ASP_Projects\\LMYC-Assignment2\\LmycWeb\\LmycWeb.csproj",
       "projectName": "LmycWeb",
-      "projectPath": "/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/LmycWeb.csproj",
-      "packagesPath": "/Users/bryan/.nuget/packages/",
-      "outputPath": "/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj",
+      "projectPath": "C:\\ASP_Projects\\LMYC-Assignment2\\LmycWeb\\LmycWeb.csproj",
+      "packagesPath": "C:\\Users\\mini_\\.nuget\\packages\\",
+      "outputPath": "C:\\ASP_Projects\\LMYC-Assignment2\\LmycWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/bryan/.config/NuGet/NuGet.Config"
+        "C:\\Users\\mini_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -13401,41 +13403,40 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
+          "AspNet.Security.OAuth.Validation": {
             "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
+            "version": "[2.0.0-*, )"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.5"
+            "version": "[2.0.5, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.1, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.2"
-          },
-          "AspNet.Security.OAuth.Validation": {
-            "target": "Package",
-            "version": "2.0.0-*"
+            "version": "[2.0.2, )"
           },
           "OpenIddict": {
             "target": "Package",
-            "version": "2.0.0-*"
+            "version": "[2.0.0-*, )"
           },
           "OpenIddict.EntityFrameworkCore": {
             "target": "Package",
-            "version": "2.0.0-*"
+            "version": "[2.0.0-*, )"
           },
           "OpenIddict.Mvc": {
             "target": "Package",
-            "version": "2.0.0-*"
+            "version": "[2.0.0-*, )"
           }
         },
         "imports": [
