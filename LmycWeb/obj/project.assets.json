@@ -13134,13 +13134,13 @@
       "projectName": "LmycWeb",
       "projectPath": "/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/LmycWeb.csproj",
       "packagesPath": "/Users/bryan/.nuget/packages/",
-      "outputPath": "/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj/",
+      "outputPath": "/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/bryan/.nuget/NuGet/NuGet.Config"
+        "/Users/bryan/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -13162,24 +13162,25 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0",
+            "autoReferenced": true
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "[2.0.5, )"
+            "version": "2.0.5"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.1, )"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "[2.0.0, )",
-            "autoReferenced": true
+            "version": "2.0.1"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "2.0.2"
           }
         },
         "imports": [
