@@ -9,6 +9,7 @@ using LmycWeb.Data;
 using LmycWeb.Models;
 using Microsoft.AspNetCore.Authorization;
 using AspNet.Security.OAuth.Validation;
+using Microsoft.AspNetCore.Cors;
 
 namespace LmycWeb.Controllers.API
 {

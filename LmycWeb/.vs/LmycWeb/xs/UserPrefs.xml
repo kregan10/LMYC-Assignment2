@@ -1,11 +1,6 @@
-﻿<Properties StartupConfiguration="{AC930D41-B0CA-416D-969E-04A1DC84C8A2}|Default">
+﻿<Properties StartupConfiguration="{98CCDE80-924B-4952-8750-C8E07AAC049D}|Default">
   <MonoDevelop.Ide.ItemProperties.LmycWeb PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ValuesController.cs">
-    <Files>
-      <File FileName="Startup.cs" Line="32" Column="44" />
-      <File FileName="Controllers/ValuesController.cs" Line="20" Column="6" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

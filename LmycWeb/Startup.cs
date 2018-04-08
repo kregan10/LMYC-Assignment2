@@ -98,8 +98,18 @@ namespace LmycWeb
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext context)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext dbContext)
         {
+            app.Use(async (HttpContext httpContext, Func<Task> next) =>
+            {
+                await next.Invoke();
+
+                if (httpContext.Response.StatusCode == 404)
+                {
+                    httpContext.Request.Path = new PathString("/index.html");
+                    await next.Invoke();
+                }
+            });
 
             if (env.IsDevelopment())
             {
@@ -111,16 +121,16 @@ namespace LmycWeb
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.Use(async (HttpContext context, Func<Task> next) =>
-            {
-                await next.Invoke();
+            //app.Use(async (HttpContext httpContext, Func<Task> next) =>
+            //{
+            //    await next.Invoke();
 
-                if (context.Response.StatusCode == 404 && !context.Request.Path.Value.Contains("/api"))
-                {
-                    context.Request.Path = "/index.html";
-                    await next.Invoke();
-                }
-            });
+            //    if (httpContext.Response.StatusCode == 404 && !httpContext.Request.Path.Value.Contains("/api"))
+            //    {
+            //        httpContext.Request.Path = "/index.html";
+            //        await next.Invoke();
+            //    }
+            //});
 
             app.UseDefaultFiles();
 
@@ -134,7 +144,7 @@ namespace LmycWeb
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-           // DummyData.Initialize(context);
+            // DummyData.Initialize(dbContext);
 
         }
     }
