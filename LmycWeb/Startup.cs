@@ -145,7 +145,6 @@ namespace LmycWeb
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
             // DummyData.Initialize(dbContext);
-
-        }
+                                }
     }
 }
