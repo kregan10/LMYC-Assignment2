@@ -1,25 +1,13 @@
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/app.db
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.deps.json
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.runtimeconfig.json
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.runtimeconfig.dev.json
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.dll
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.pdb
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.csproj.CoreCompileInputs.cache
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.AssemblyInfoInputs.cache
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.AssemblyInfo.cs
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.dll
-C:/ASP_Projects/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.pdb
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.csprojResolveAssemblyReference.cache
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.csproj.CoreCompileInputs.cache
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.AssemblyInfoInputs.cache
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.AssemblyInfo.cs
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/app.db
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.deps.json
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.runtimeconfig.json
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.runtimeconfig.dev.json
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.dll
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/bin/Debug/netcoreapp2.0/LmycWeb.pdb
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.dll
-/Users/bryan/Documents/CST/COMP 4976/LMYC-Assignment2/LmycWeb/obj/Debug/netcoreapp2.0/LmycWeb.pdb
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\app.db
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\LmycWeb.deps.json
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\LmycWeb.runtimeconfig.json
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\LmycWeb.runtimeconfig.dev.json
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\LmycWeb.dll
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\bin\Debug\netcoreapp2.0\LmycWeb.pdb
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\LmycWeb.csprojResolveAssemblyReference.cache
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\LmycWeb.csproj.CoreCompileInputs.cache
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\LmycWeb.AssemblyInfoInputs.cache
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\LmycWeb.AssemblyInfo.cs
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\LmycWeb.dll
+C:\ASP_Projects\LMYC-Assignment2\LmycWeb\obj\Debug\netcoreapp2.0\LmycWeb.pdb

@@ -11,7 +11,7 @@ using System;
 namespace LmycWeb.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180405171750_First Migration")]
+    [Migration("20180408042458_First Migration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -101,6 +101,28 @@ namespace LmycWeb.Data.Migrations
                     b.HasIndex("CreatedBy");
 
                     b.ToTable("Boats");
+                });
+
+            modelBuilder.Entity("LmycWeb.Models.Reservation", b =>
+                {
+                    b.Property<int>("ReservationId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("BoatId");
+
+                    b.Property<string>("CreatedBy");
+
+                    b.Property<DateTime>("EndDateTime");
+
+                    b.Property<DateTime>("StartDateTime");
+
+                    b.HasKey("ReservationId");
+
+                    b.HasIndex("BoatId");
+
+                    b.HasIndex("CreatedBy");
+
+                    b.ToTable("Reservations");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -212,6 +234,18 @@ namespace LmycWeb.Data.Migrations
 
             modelBuilder.Entity("LmycWeb.Models.Boat", b =>
                 {
+                    b.HasOne("LmycWeb.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("CreatedBy");
+                });
+
+            modelBuilder.Entity("LmycWeb.Models.Reservation", b =>
+                {
+                    b.HasOne("LmycWeb.Models.Boat", "Boat")
+                        .WithMany()
+                        .HasForeignKey("BoatId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("LmycWeb.Models.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("CreatedBy");
