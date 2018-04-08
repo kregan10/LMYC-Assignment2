@@ -1,17 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LmycWeb.Models
 {
     public class Boat
     {
-
         [Key]
         public int BoatId { get; set; }
 
         [Required(ErrorMessage = "A name is required")]
-        [Display(Name = "Name")]
+        [Display(Name = "Boat Name")]
         public string BoatName { get; set; }
 
         [Required(ErrorMessage = "A picture url is required")]
