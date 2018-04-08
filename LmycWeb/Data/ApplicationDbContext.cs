@@ -11,7 +11,7 @@ namespace LmycWeb.Data
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
         public DbSet<Boat> Boats { get; set; }
-
+        public DbSet<Reservation> Reservations { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {

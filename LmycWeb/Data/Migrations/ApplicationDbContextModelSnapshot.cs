@@ -102,6 +102,28 @@ namespace LmycWeb.Data.Migrations
                     b.ToTable("Boats");
                 });
 
+            modelBuilder.Entity("LmycWeb.Models.Reservation", b =>
+                {
+                    b.Property<int>("ReservationId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("BoatId");
+
+                    b.Property<string>("CreatedBy");
+
+                    b.Property<DateTime>("EndDateTime");
+
+                    b.Property<DateTime>("StartDateTime");
+
+                    b.HasKey("ReservationId");
+
+                    b.HasIndex("BoatId");
+
+                    b.HasIndex("CreatedBy");
+
+                    b.ToTable("Reservations");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -211,6 +233,18 @@ namespace LmycWeb.Data.Migrations
 
             modelBuilder.Entity("LmycWeb.Models.Boat", b =>
                 {
+                    b.HasOne("LmycWeb.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("CreatedBy");
+                });
+
+            modelBuilder.Entity("LmycWeb.Models.Reservation", b =>
+                {
+                    b.HasOne("LmycWeb.Models.Boat", "Boat")
+                        .WithMany()
+                        .HasForeignKey("BoatId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("LmycWeb.Models.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("CreatedBy");

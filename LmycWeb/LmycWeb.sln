@@ -1,7 +1,9 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LmycWeb", "LmycWeb.csproj", "{4581133A-787B-4DFA-917F-239A7FE3A62D}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LmycWeb", "LmycWeb.csproj", "{98CCDE80-924B-4952-8750-C8E07AAC049D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4581133A-787B-4DFA-917F-239A7FE3A62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4581133A-787B-4DFA-917F-239A7FE3A62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4581133A-787B-4DFA-917F-239A7FE3A62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4581133A-787B-4DFA-917F-239A7FE3A62D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CCDE80-924B-4952-8750-C8E07AAC049D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CCDE80-924B-4952-8750-C8E07AAC049D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CCDE80-924B-4952-8750-C8E07AAC049D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CCDE80-924B-4952-8750-C8E07AAC049D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B32183C8-0F2A-4A91-A71B-827AC18B2B64}
 	EndGlobalSection
 EndGlobal
