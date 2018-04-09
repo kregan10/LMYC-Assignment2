@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using LmycWeb.Models;
 
-public class MyIdentityDbContext : IdentityDbContext<ApplicationUser, Admin, Member, string>
+public class MyIdentityDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
 {
     public MyIdentityDbContext
        (DbContextOptions<MyIdentityDbContext> options)
