@@ -50,7 +50,7 @@ namespace LmycWeb
                     .AllowCredentials());
             });
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
@@ -98,12 +98,11 @@ namespace LmycWeb
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-<<<<<<< HEAD
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext dbContext)
-=======
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext context)
->>>>>>> 4d3ae4bf2ebda2db966958b869c40ff6103061d6
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext dbContext,
+            UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager
+        )
         {
+
             app.Use(async (HttpContext httpContext, Func<Task> next) =>
             {
                 await next.Invoke();
@@ -125,22 +124,13 @@ namespace LmycWeb
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            //app.Use(async (HttpContext httpContext, Func<Task> next) =>
-            //{
-            //    await next.Invoke();
-
-            //    if (httpContext.Response.StatusCode == 404 && !httpContext.Request.Path.Value.Contains("/api"))
-            //    {
-            //        httpContext.Request.Path = "/index.html";
-            //        await next.Invoke();
-            //    }
-            //});
-
             app.UseDefaultFiles();
 
             app.UseStaticFiles();
 
             app.UseAuthentication();
+
+            MyIdentityDataInitializer.SeedData(userManager, roleManager);
 
             app.UseMvc(routes =>
             {
@@ -148,13 +138,7 @@ namespace LmycWeb
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-<<<<<<< HEAD
             // DummyData.Initialize(dbContext);
-                                }
-=======
-           // DummyData.Initialize(context);
-
         }
->>>>>>> 4d3ae4bf2ebda2db966958b869c40ff6103061d6
     }
 }
